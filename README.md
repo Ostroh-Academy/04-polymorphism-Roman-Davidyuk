@@ -26,7 +26,7 @@
   <li>
     Перший крок створити інтерфейс IFunction.
     
-  ```
+  ```C#
   public interface IFunction
   {
       void SetCoefficients(double[] coefficients);
@@ -39,7 +39,7 @@
   <li>
       Другий крок створити фабричний метод у класі FunctionFactory, який буде створювати об'єкти різних типів функцій в залежності від вхідних даних.
     
-```
+```C#
   public static class FunctionFactory
   {
       public static IFunction CreateFunction(int choice)
@@ -65,7 +65,7 @@
 
 пілся цого програма Main буде мати такий вигляд
 
-```
+```C#
 static void Main(string[] args)
 {
       Console.WriteLine("Which type of function do you want to create?");
